@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol {{ module_info.name }}RouterProtocol: AnyObject {
-
-}
-
 final class {{ module_info.name }}Router {
 
     private unowned let viewController: UIViewController
@@ -39,5 +35,4 @@ final class {{ module_info.name }}Router {
 // MARK: {{ module_info.name }}RouterProtocol
 
 extension {{ module_info.name }}Router: {{ module_info.name }}RouterProtocol {
-    
 }

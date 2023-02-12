@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol {{ module_info.name }}ViewProtocol: AnyObject {
-
-}
-
 class {{ module_info.name }}ViewController: UIViewController {
 
     var presenter: {{ module_info.name }}PressenterInputProtocol!
@@ -27,5 +23,4 @@ class {{ module_info.name }}ViewController: UIViewController {
 // MARK: {{ module_info.name }}ViewProtocol
 
 extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewProtocol {
-    
 }

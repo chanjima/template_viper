@@ -2,12 +2,15 @@
 name: "template_viper"
 summary: "Swift VIPER module template with UIViewController playing as a View."
 author: "chanjima"
-version: "0.0.1"
+version: "0.0.2"
 license: "MIT"
 
 # The declarations for code files
 
 code_files:
+
+# Protocols layer
+- {name: Protocols/Protocols.swift, path: Code/Protocols/protocols.swift.liquid}
 
 # View layer
 - {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}

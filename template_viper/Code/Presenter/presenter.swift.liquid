@@ -6,15 +6,6 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-protocol {{ module_info.name }}PressenterInputProtocol: AnyObject {
-    /// viewDidLoad
-    func viewDidLoad()
-}
-
-protocol {{ module_info.name }}PressenterOutputProtocol: AnyObject {
-
-}
-
 final class {{ module_info.name }}Presenter {
 
     weak var view: {{ module_info.name }}ViewProtocol?
@@ -26,19 +17,17 @@ final class {{ module_info.name }}Presenter {
         self.router = router
         self.interactor = interactor
     }
-
 }
 
 // MARK: {{ module_info.name }}PressenterInputProtocol
 
 extension {{ module_info.name }}Presenter: {{ module_info.name }}PressenterInputProtocol {
+
     func viewDidLoad() {
-        
     }
 }
 
 // MARK: {{ module_info.name }}PressenterOutputProtocol
 
 extension {{ module_info.name }}Presenter: {{ module_info.name }}PressenterOutputProtocol {
-
 }
